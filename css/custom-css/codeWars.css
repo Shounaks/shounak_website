@@ -1,0 +1,6 @@
+.codewars{
+    src: url("https://www.codewars.com/users/Shalnarkus/badges/micro");
+  }
+.codewars:hover {
+    src: url("https://www.codewars.com/users/Shalnarkus/badges/large");
+  }
