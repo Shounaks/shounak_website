@@ -1,27 +1,22 @@
-.websiteName{
-  clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
-  background-color: #e3f2fd;
-}
+/* .websiteName{
+  /* clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%); */
+} */
 #customNavbar {
     /* position: sticky; */
     top: 0;
     font-weight: bold;
     transition: 0.4s;
-    background-color: #e3f2fd;
-    opacity: 0.3;
-    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #abd4f8;
+    /* clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%); */
   }
 
   #customNavbar:hover {
       color: black;
-      background-color: #abd4f8;
-    opacity: 0.9;
-    
+      opacity: 0.9; 
   }
   #customNavbar a:hover {
     background-color: #c8e4f0;
     color: black;
-    opacity: 0.9;
   }
 
   #customNavbar a.active {
