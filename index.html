@@ -26,27 +26,26 @@
   <link rel="stylesheet" href="css/custom-css/navbar.css">
   <!-- LIGHT/DARK SCENE -->
   <link rel="stylesheet" href="css/custom-css/lightTheme.css" id="theme-link">
-  <script>
-    const btn = document.querySelector(".btn-toggle");
-    const theme = document.querySelector("#theme-link");
-    function toggle(){
-      if (theme.getAttribute("href") == "./css/custom-css/lightTheme.css") {
-        theme.href = "./css/custom-css/darkTheme.css";
-      } else {
-        theme.href = "./css/custom-css/lightTheme.css";
-      }
-    };
-  </script>
+
+  <!-- Font Style -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <style>
+    *{
+      font-family: Ubuntu;
+      font-style: normal;
+      font-variant: normal;
+    }
+  </style>
   <!-- Navbar Shrink -->
   <script src="js/navbarShrink.js"></script>
   <script src="js/navbarSticky.js"></script>
-  <script src="js/"></script>
+  <script src="js/themeToggle.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body class="color0">
+<body class="color2">
 
 
   <div class="websiteName">
@@ -99,9 +98,9 @@
     <div class="container-fluid">
       <div class="row g-5">
         <div class="col-lg-8 col-sm-12">
-          <div class="card-transparent border border-primary rounded h-100 color1">
-            <div id="home" class="card-header" style="background-color: #abd4f8;"><img
-                src="assets/svg/question-diamond.svg" alt="">
+          <div class="card-transparent border border-primary rounded h-100 color0">
+            <div id="home" class="card-header color2">
+              <img src="assets/svg/question-diamond.svg" alt="">
               About Me: Who Am I?
             </div>
             <div class="card-body color1">
@@ -125,9 +124,9 @@
           </div>
         </div>
         <div class="col-lg-4 col-sm-12">
-          <div class="card-transparent border border-primary rounded h-100">
-            <div id="achievements" class="card-header" style="background-color: #abd4f8;"><img src="assets/svg/star.svg"
-                alt="">
+          <div class="card-transparent border border-primary rounded h-100 color0">
+            <div id="achievements" class="card-header color2">
+              <img src="assets/svg/star.svg" alt="">
               Achievements</div>
             <div class="card-body color1" style="overflow: auto;height: 554px;">
               <div class="row">
@@ -190,8 +189,8 @@
       <br>
       <div class="row g-5">
         <div class="col">
-          <div class="card-transparent border border-primary rounded">
-            <div id="exp" class="card-header" style="background-color: #abd4f8;">
+          <div class="card-transparent border border-primary rounded color0">
+            <div id="exp" class="card-header color2">
               <img src="assets/svg/building.svg" alt="">
               Experience:
             </div>
@@ -210,7 +209,7 @@
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/data.png" alt="">
+                      <img height="50px" width="100%" src="assets/timeline/data.png" style="float: right;"  alt="">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2021-04-24</time>
@@ -227,7 +226,7 @@
                         E-Commers Website. (psst.. got 92/100 in every tests individually!!) </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/java.png" alt="">
+                      <img height="50px" width="100%" src="assets/timeline/java.png" style="float: right;" alt="">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2020-02-23</time>
@@ -243,7 +242,7 @@
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/key-person.png" alt="">
+                      <img height="50px" width="100%" src="assets/timeline/key-person.png" style="float: right;" alt="">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2020-11-23</time>
@@ -259,7 +258,7 @@
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/elearning.png" alt="">
+                      <img height="50px" width="100%" src="assets/timeline/elearning.png" style="float: right;" alt="">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2020-08-17</time>
@@ -275,14 +274,14 @@
       <br>
       <div class="row g-5 h-100">
         <div class="col-md-6 col-sm-12">
-          <div class="card-transparent border border-primary rounded h-100 color1">
-            <div id="official" class="card-header" style="background-color: #abd4f8;">
+          <div class="card-transparent border border-primary rounded h-100 color0">
+            <div id="official" class="card-header color2">
               <img src="assets/svg/box-seam.svg" alt="" />
               Projects
             </div>
             <div class="card-body color1">
               <div class="row">
-                <div class="col text-justify">
+                <div class="col text-justify h-100">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nulla repellat eum beatae quod
                   alias iste eaque doloremque officia dignissimos, dicta necessitatibus consequatur?
 
@@ -295,8 +294,8 @@
         <div class="col-md-6 col-sm-12">
           <div class="row ">
             <div class="col">
-              <div class="card-transparent border border-primary rounded">
-                <div class="card-header" style="background-color: #abd4f8;">
+              <div class="card-transparent border border-primary rounded color0">
+                <div class="card-header color2">
                   <img src="assets/svg/controller.svg" alt="" />
                   Interests
                 </div>
@@ -337,8 +336,8 @@
           <br>
           <div class="row">
             <div class="col">
-              <div class="card-transparent border border-primary rounded">
-                <div class="card-header" style="background-color: #abd4f8;">
+              <div class="card- border border-primary rounded color0">
+                <div class="card-header color2">
                   <img src="assets/svg/file-earmark-code.svg" alt="" />
                   Skills
                 </div>
@@ -424,8 +423,8 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-12 col-sm-12 g-4">
-          <div class="card-transparent border border-primary rounded h-100 color1">
-            <div class="card-header" style="background-color: #abd4f8;">
+          <div class="card-transparent border border-primary rounded h-100 color0">
+            <div class="card-header color2">
               <img src="assets/svg/calculator.svg" alt="">
               Education Qualifications
             </div>
@@ -462,12 +461,12 @@
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12 g-4">
-          <div class="card-transparent border border-primary rounded h-100 color1">
-            <div class="card-header" style="background-color: #abd4f8;">
+          <div class="card-transparent border border-primary rounded h-100 color0">
+            <div class="card-header color2">
               <img src="assets/svg/patch-check.svg" alt="">
               Courses Completed
             </div>
-            <div class="card-body" style="overflow: auto;height: 504px;">
+            <div class="card-body color1" style="overflow: auto;height: 504px;">
               <div class="list-group">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Complete Cyber Security Course</h5>
@@ -508,10 +507,6 @@
                   vulnerablities in software.</small>
               </div>
             </div>
-            <hr>
-            <div class="text-info">
-              More to be added later...
-            </div>
           </div>
         </div>
       </div>
@@ -519,17 +514,16 @@
       <footer class="text-center rounded color1" style="margin: 0px;padding: 0px;">
         <div id="contact" class="row">
           <div class="col-12">
-            <div class="card-transparent">
+            <div class="card-transparent color2">
               <div class="accordion accordion-flush rounded border border-primary" id="contactDetails">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                      style="background-color: #abd4f8;">
+                    <button class="accordion-button color2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Contact Me
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show color1" aria-labelledby="headingOne"
+                  <div id="collapseOne" class="accordion-collapse collapse color1" aria-labelledby="headingOne"
                     data-bs-parent="#contactDetails">
                     <div class="accordion-body ">
                       <div class="row">

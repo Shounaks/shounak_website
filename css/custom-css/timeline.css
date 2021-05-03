@@ -28,9 +28,9 @@ body{
     font-weight: lighter;
     background-color:#abd4f8; 
 }
-.timeline p, .timeline time {
-    color: var(--blue)
-}
+/* .timeline p, .timeline time {
+
+} */
 .timeline::before {
     content: "";
     display: block;

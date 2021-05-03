@@ -1,14 +1,29 @@
+/* 
+    color0 = background
+    color1 = box boxes
+    color2 = heading of card
+    color3 = text itself{redundant  }
+
+*/
 .color0{
     color: whitesmoke;
-    background-color: #697a86;
+    background-color: #17b794;
 }
 .color1{
     color: whitesmoke;
-    background-color: #344046;
+    background-color: #0d7377;
+    
 }
 .color2{
     color: whitesmoke;
     background-color: #161c22;
+}
+body{
+    color: whitesmoke;
+    background-color: rgb(80, 80, 35);
+}
+a{
+    color: aqua;
 }
 .mario{
     background: url(../../assets/gif/mario-wide.gif);
