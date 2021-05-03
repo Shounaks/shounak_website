@@ -1,13 +1,12 @@
 .color0{
-    background-color: #e3f2fd;
+    background-color: #697a86;
 }
 .color1{
-    background-color: #c8e4f0;
+    background-color: #344046;
 }
 .color2{
-    background-color: #abd4f8;
+    background-color: #161c22;
 }
-
 .mario{
     background: url(../../assets/gif/mario-wide.gif);
     background-size: cover;
