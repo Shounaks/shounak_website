@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
   <!-- META TAGS -->
   <title>Shounak</title>
@@ -14,9 +13,6 @@
   <link rel="shortcut icon" href="assets/photos/favicon.png" type="image/png"/>
   <!-- BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
-  <link rel="stylesheet" href="css/bootstrap-reboot.css">
-  <link rel="stylesheet" href="css/bootstrap-utilities.css">
   <link rel="stylesheet" href="css/custom-css/timeline.css">
   <!-- FONT AWESOME LINK -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,7 +30,9 @@
   <script src="js/themeToggle.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <style>
     *{
       font-family: Ubuntu;
@@ -43,9 +41,27 @@
     }
   </style>
 </head>
+
 <!-- =========================================================================================================================================== -->
 <body class="color2" style="overflow-x: hidden;" onload="setThemeOnLoad()">
-
+<!-- todo list STARTS: remove after completion-->
+<div id="draggable" class="bg-warning card" style="position: absolute;left: 500px;top: 150px;z-index: 999;">
+  <div class="card-header">To Do List</div>
+  <div class="card-body">
+  <input type="checkbox" name="" id="" value="">Create A Loading Animation <br>
+  <input type="checkbox" name="" id="" value="">Change Color Scheme <br>
+  <input type="checkbox" name="" id="" value="">Ayush Timeline Image bug<br>
+  <input type="checkbox" name="" id="" value="">RWD course<br>
+  <input type="checkbox" name="" id="" value="">Content Coreography<br>
+  <input type="checkbox" name="" id="" value="">Trishank's Theme Toggler buttons<br>
+</div>
+</div>
+<script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+<!-- todo list ENDS -->
 
   <div class="websiteName">
     <div id="icon" class="display-1">Shounak Bhalerao</div>
@@ -147,18 +163,15 @@
               <div class="row">
                 <div class="card-transparent ">
                   <div class="card-body">
-                    <h5 class="card-title">Competitive Programming</h5>
+                    <h5 class="card-title"><b>Competitive Programming</b></h5>
                     <a href="https://www.codewars.com/users/Shalnarkus">
-                      <img class="img-fluid codewars" src="https://www.codewars.com/users/Shalnarkus/badges/micro"
-                        onmouseover="this.src='https://www.codewars.com/users/Shalnarkus/badges/large'"
-                        onmouseout="this.src='https://www.codewars.com/users/Shalnarkus/badges/micro'">
+                      <!-- <img class="img-fluid codewars" src="https://www.codewars.com/users/Shalnarkus/badges/micro" onmouseover="this.src='https://www.codewars.com/users/Shalnarkus/badges/large'" onmouseout="this.src='https://www.codewars.com/users/Shalnarkus/badges/micro'"> -->
                     </a>
-                    <br><br>
-                    <h6 class="card-subtitle mb-2 text-muted"> <b>-</b> 4⭐ in C Programming Language, Java and SQL </h6>
-                    <h6 class="card-subtitle mb-2 text-muted"> <b>-</b> Solved over 200 assignments for C programming
-                      Language </h6>
-                    <h6 class="card-subtitle mb-2 text-muted"> <b>-</b> Solved over 150 assignments for Java programming
-                      Language </h6>
+                    <div class="card-subtitle m-2 p-2">
+                      <h6> <b>-</b> 4⭐ in C Programming Language, Java and SQL on HackerRank</h6>
+                      <h6> <b>-</b> Solved over 200 assignments in C </h6>
+                      <h6> <b>-</b> Solved over 150 assignments in Java</h6>
+                    </div>
                     <p class="card-text">
                       As an Hobby Competitive Programming allows me to learn new stuff. I am not that serious about the
                       competitive part, more of a learning venture.
@@ -170,9 +183,10 @@
                   <div class="row">
                     <div class="card-transparent">
                       <div class="card-body">
-                        <h5 class="card-title">Linux(🐧) is Love(💖)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted"> >Worked on almost over 2 dozens of Linux-based
-                          Operating system</h6>
+                        <h5 class="card-title"><b>Linux(🐧) is Love(💙💚💛💜🧡🖤)</b></h5>
+                        <div class="card-subtitle m-2 p-2">
+                          <h6 class="card-subtitle mb-2"> <b>-</b> Worked on almost over 2 dozens of Linux-based O.S.</h6>
+                        </div>
                         <p class="card-text">
                           Have managed multiple FTP servers, workstations, and Desktops. Tried to Create a proxy server
                           and failed. Currently working on creating a RAID server for storing my huge collection of
@@ -203,10 +217,10 @@
                   <div
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light color2">INSERT PROJECT NAME HERE</h3>
-                      <p>
-                        <span class="timeline-date2 text-danger">(2021-04-24)</span><br>
+                      <h3 class=" text-success color2">Working on a project by [CONFEDENTIAL] with Infosys</h3>
+                      <p class=" text-justify">
                         Currently Doing a project for [xyz] company 
+                        <span class="timeline-date2 text-danger">(2021-04-24)</span><br>
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
@@ -221,10 +235,10 @@
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
                       <h3 class=" text-light color2">Promoted to System Engineer</h3>
-                      <p>
-                        <span class="timeline-date2 text-danger">(2020-02-23)</span><br>
+                      <p class=" text-justify">
                         Completed Generic & Stream Training in JAVA-ANGULAR and Implemented features to a Capstone
                         E-Commers Website. (psst.. got 92/100 in every tests individually!!) </p>
+                        <span class="timeline-date2 text-danger">(2020-02-23)</span><br>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                       <img class="float-right" height="50px" width="100%" src="assets/timeline/java.png">
@@ -237,9 +251,9 @@
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
                       <h3 class=" text-light color2">Joined Infosys Ltd. as System Engineer Trainee</h3>
-                      <p>
-                        <span class="timeline-date2 text-danger">(2020-11-23)</span><br>
+                      <p class=" text-justify">
                         Joined Infosys Ltd. as System Engineer Trainee
+                        <span class="timeline-date2 text-danger">(2020-11-23)</span><br>
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
@@ -253,9 +267,9 @@
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
                       <h3 class="text-light color2">Graduated from DIEMS</h3>
-                      <p>
-                        <span class="timeline-date2 text-danger">(2020-08-17)</span><br>
+                      <p class=" text-justify">
                         Successfully completed my Graduation with ZERO backlogs[except one, but we dont talk about it!]
+                        <span class="timeline-date2 text-danger">(2020-08-17)</span><br>
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
@@ -430,30 +444,26 @@
             <div class="card-body color1">
               <div class="card-transparent ">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Computer Science and Engineering</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"> Deogiri Institute of Engineering and Management Studies,
+                  <h5 class="card-title"><b>Computer Science and Engineering</b></h5>
+                  <h6 class="card-subtitle m-2"> Deogiri Institute of Engineering and Management Studies,
                     Aurangabad</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">B.E.(CSE) - batch of 2016-2020</h6>
-                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <h6 class="card-subtitle m-2">B.E.(CSE) - batch of 2016-2020</h6>
                 </div>
               </div>
               <hr>
               <div class="card-transparent ">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Pre-University Education</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"> Vasantrao Naik College, Aurangabad</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">12th (Physics - Chemistry - Maths - Electronics)- batch of
-                    2014-2016</h6>
-                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <h5 class="card-title"><b>Pre-University Education</b></h5>
+                  <h6 class="card-subtitle mb-2"> Vasantrao Naik College, Aurangabad</h6>
+                  <h6 class="card-subtitle mb-2">12th (Physics - Chemistry - Maths - Electronics)- batch of 2014-2016</h6>
                 </div>
               </div>
               <hr>
               <div class="card-transparent ">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Primary and Secondary Education</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"> Tender Care Home, Aurangabad</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">10th (CBSE)- batch of 2014</h6>
-                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <h5 class="card-title"><b>Primary and Secondary Education</b></h5>
+                  <h6 class="card-subtitle mb-2"> Tender Care Home, Aurangabad</h6>
+                  <h6 class="card-subtitle mb-2">10th (CBSE)- batch of 2014</h6>
                 </div>
               </div>
             </div>
@@ -472,14 +482,14 @@
                   <small>2-11-2019</small>
                 </div>
                 <p>(UDEMY - Online)</p>
-                <small class="text-secondary">Learnt the basics of Cyber Security and Using Tails OS.</small>
+                <small class="">Learnt the basics of Cyber Security and Using Tails OS.</small>
                 <hr>
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Workshop on Git & Github</h5>
                   <small>15-08-2020</small>
                 </div>
                 <p>(Indian Open Source Community)</p>
-                <small class="text-secondary">Learnt the basics of Git using Command Line and Atom IDE. Basics of
+                <small class="">Learnt the basics of Git using Command Line and Atom IDE. Basics of
                   Github</small>
                 <hr>
                 <div class="d-flex w-100 justify-content-between">
@@ -487,14 +497,14 @@
                   <small>N/A</small>
                 </div>
                 <p>(College Level)</p>
-                <small class="text-secondary">Learnt the basics of Operations Security and Policy Making.</small>
+                <small class="">Learnt the basics of Operations Security and Policy Making.</small>
                 <hr>
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Basics of IOT and AI</h5>
                   <small>14-06-2020</small>
                 </div>
                 <p>(College Level)</p>
-                <small class="text-secondary">Created a mini-project for monitoring plant water level and using AI to
+                <small class="">Created a mini-project for monitoring plant water level and using AI to
                   automate irrigation.</small>
                 <hr>
                 <div class="d-flex w-100 justify-content-between">
@@ -502,7 +512,7 @@
                   <small>12-02-2019</small>
                 </div>
                 <p>(UDEMY - Online)</p>
-                <small class="text-secondary">Learning about Buffer Overflows and creating exploits for simple
+                <small class="">Learning about Buffer Overflows and creating exploits for simple
                   vulnerablities in software.</small>
               </div>
             </div>
