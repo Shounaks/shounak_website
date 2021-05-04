@@ -33,11 +33,20 @@
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/queen.js"></script>
   <style>
     *{
       font-family: Ubuntu;
       font-style: normal;
       font-variant: normal;
+    }
+    #queen{
+      position: absolute;
+      display: none;
+      top: 400px;
+      left: -360px;
+      max-width: 200px;
+      
     }
   </style>
 </head>
@@ -45,7 +54,7 @@
 <!-- =========================================================================================================================================== -->
 <body class="color2" style="overflow-x: hidden;" onload="setThemeOnLoad()">
 <!-- todo list STARTS: remove after completion-->
-<div id="draggable" class="bg-warning card" style="position: absolute;left: 500px;top: 150px;z-index: 999;">
+<!-- <div id="draggable" class="bg-warning card" style="position: absolute;left: 500px;top: 150px;z-index: 999;">
   <div class="card-header">To Do List</div>
   <div class="card-body">
   <input type="checkbox" name="" id="" value="">Create A Loading Animation <br>
@@ -60,7 +69,7 @@
   $( function() {
     $( "#draggable" ).draggable();
   } );
-  </script>
+  </script> -->
 <!-- todo list ENDS -->
 
   <div class="websiteName">
@@ -119,7 +128,10 @@
               About Me: Who Am I?
             </div>
             <div class="card-body color1 text-justify">
-              <img class="img-fluid float-left w-100" src="assets/photos/medidate.jpeg" style="max-width: 400px;max-height: 600px;padding: 0px 15px 15px; border-radius: 50px;">
+              <span style="position: relative">
+                <img class="mypic img-fluid float-left w-100" src="assets/photos/medidate.jpeg" style="max-width: 400px;max-height: 600px;padding: 0px 15px 15px; border-radius: 50px;" onmouseover="showQueen()" onmouseout="hideQueen()">
+                <img id="queen" src="assets/photos/killer_queen.png">
+              </span>
               <blockquote cite="JOJO's Bizzare Adventure">
               My name is Shounak Bhalerao. <br>
               I'm 23 years old. <br>
