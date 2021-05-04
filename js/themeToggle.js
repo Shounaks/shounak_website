@@ -44,6 +44,7 @@ const setThemeOnLoad = () => {
       }
     } else {
       localStorage.setItem("theme", "light");
+      toggleTheme();
       // document.getElementById("result").innerHTML = localStorage.getItem("theme");
     }
   } else {
