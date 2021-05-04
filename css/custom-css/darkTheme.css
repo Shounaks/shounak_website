@@ -25,17 +25,18 @@ body{
 a{
     color: aqua;
 }
-/* .accordion-header > .accordion-button {
-     background-color:#000; 
-} */
-/* Modify brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: green;
-}
 .mario{
     background: url(../../assets/gif/mario-wide.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: green;
+}
+
+.accordion-button.collapsed {
+    background: #0d7377;
 }

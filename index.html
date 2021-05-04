@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden;">
+
+<html lang="en">
 
 <head>
   <!-- META TAGS -->
@@ -24,15 +24,13 @@
   <script src="js/bootstrap.js"></script>
   <link rel="stylesheet" href="css/custom-css/codeWars.css">
   <link rel="stylesheet" href="css/custom-css/meter.css">
-  <!-- LIGHT/DARK THEME -->
-  <link rel="stylesheet" href="css/custom-css/navbarLight.css" id="theme-link-navbar">
-  <link rel="stylesheet" href="css/custom-css/lightTheme.css" id="theme-link">
+  <!-- LIGHT/DARK THEME : deliberately left blank-->
+  <link rel="stylesheet" href="" id="theme-link-navbar">
+  <link rel="stylesheet" href="" id="theme-link">
 
   <!-- Font Style -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <!-- Navbar Shrink -->
-  <script src="js/navbarShrink.js"></script>
-  <script src="js/navbarSticky.js"></script>
   <script src="js/themeToggle.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -46,7 +44,7 @@
   </style>
 </head>
 <!-- =========================================================================================================================================== -->
-<body class="color2">
+<body class="color2" style="overflow-x: hidden;" onload="setThemeOnLoad()">
 
 
   <div class="websiteName">
@@ -77,7 +75,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item color1 rounded">            
-            <button class="btn btn-toggle" onclick="toggle()"><img src="assets/svg/lightbulb.svg"/></button>
+            <button class="btn btn-toggle" onclick="toggleTheme()"><img src="assets/svg/lightbulb.svg"/></button>
           </li>&nbsp;
         </ul>
       </div>
@@ -105,7 +103,7 @@
               About Me: Who Am I?
             </div>
             <div class="card-body color1 text-justify">
-              <img class="img-fluid" src="assets/photos/medidate.jpeg" style="width: 100%;max-width: 500px;max-height: 600px;float: left;padding: 0px 15px 15px; border-radius: 50px;">
+              <img class="img-fluid float-left w-100" src="assets/photos/medidate.jpeg" style="max-width: 400px;max-height: 600px;padding: 0px 15px 15px; border-radius: 50px;">
               <blockquote cite="JOJO's Bizzare Adventure">
               My name is Shounak Bhalerao. <br>
               I'm 23 years old. <br>
@@ -129,7 +127,8 @@
               After Completing my schooling from <a href="https://www.tch.org.in/" target="_blank">Tender Care Home</a>. I did my Junior College from <a href="https://www.naikcollege.org/" target="_blank">Vasantrao Naik College</a> and completed my graduation from <a href="https://www.dietms.org/" target="_blank">DIEMS,Aurangabad</a>. <br>
               I love meeting new people and debating about things that I dont know. Reading Books, Exploring different fields and obtaining yet unknown knoweledge, and trying to learn new stuff is AWESOME!!
               <hr>
-              <div class="w-100 h-100 rounded color0" style="display: flex;justify-content: space-evenly;">
+              <!-- 👇justify-content: space-evenly; is not supported by bootstrap due to compatiblity issues with IE10 -->
+              <div class="w-100 h-100 d-flex rounded color0" style="justify-content: space-evenly;"> 
                 <a href="mailto:shounakbhalerao777@gmail.com" target="_blank"><img src="assets/svg/envelope-open.svg" title="Email" alt="">&nbsp; Email Me</a>
                 |
                 <a href="https://www.linkedin.com/in/shounak-bhalerao-275310201/" target="_blank"><img src="assets/svg/linkedin.svg" title="LinkedIn Link" alt="">&nbsp; LinkedIn</a>
@@ -196,7 +195,7 @@
               <img src="assets/svg/building.svg" alt="">
               Experience:
             </div>
-            <div class="card-body color1" style="overflow: auto;height: 533px;">
+            <div class="card-body overflow-auto color1" style="height: 533px;">
               <!-- TIMELINE STARTS -->
               <div class="container">
                 <div class="timeline">
@@ -204,14 +203,14 @@
                   <div
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">INSERT PROJECT NAME HERE</h3>
+                      <h3 class=" text-light color2">INSERT PROJECT NAME HERE</h3>
                       <p>
                         <span class="timeline-date2 text-danger">(2021-04-24)</span><br>
                         Currently Doing a project for [xyz] company 
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/data.png" style="float: right;"  alt="">
+                      <img class="float-right" height="50px" width="100%" src="assets/timeline/data.png">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2021-04-24</time>
@@ -221,14 +220,14 @@
                   <div
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">Promoted to System Engineer</h3>
+                      <h3 class=" text-light color2">Promoted to System Engineer</h3>
                       <p>
                         <span class="timeline-date2 text-danger">(2020-02-23)</span><br>
                         Completed Generic & Stream Training in JAVA-ANGULAR and Implemented features to a Capstone
                         E-Commers Website. (psst.. got 92/100 in every tests individually!!) </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/java.png" style="float: right;" alt="">
+                      <img class="float-right" height="50px" width="100%" src="assets/timeline/java.png">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2020-02-23</time>
@@ -237,14 +236,14 @@
                   <div
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-light">Joined Infosys Ltd. as System Engineer Trainee</h3>
+                      <h3 class=" text-light color2">Joined Infosys Ltd. as System Engineer Trainee</h3>
                       <p>
                         <span class="timeline-date2 text-danger">(2020-11-23)</span><br>
                         Joined Infosys Ltd. as System Engineer Trainee
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/key-person.png" style="float: right;" alt="">
+                      <img class="float-right" height="50px" width="100%" src="assets/timeline/key-person.png">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2020-11-23</time>
@@ -253,14 +252,14 @@
                   <div
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class="text-light">Graduated from DIEMS</h3>
+                      <h3 class="text-light color2">Graduated from DIEMS</h3>
                       <p>
                         <span class="timeline-date2 text-danger">(2020-08-17)</span><br>
                         Successfully completed my Graduation with ZERO backlogs[except one, but we dont talk about it!]
                       </p>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                      <img height="50px" width="100%" src="assets/timeline/elearning.png" style="float: right;" alt="">
+                      <img class="float-right" height="50px" width="100%" src="assets/timeline/elearning.png">
                     </div>
                     <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
                       <time>2020-08-17</time>
@@ -299,7 +298,7 @@
                   <img src="assets/svg/controller.svg" alt="" />
                   Interests
                 </div>
-                <div class="color1" style="text-align: justify;">
+                <div class="text-justify color1">
                   <div class="d-flex align-items-start">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                       aria-orientation="vertical">
@@ -341,7 +340,7 @@
                   <img src="assets/svg/file-earmark-code.svg" alt="" />
                   Skills
                 </div>
-                <div class="color1" style="text-align: justify;">
+                <div class="text-justify color1">
                   <div class="d-flex align-items-start">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                       aria-orientation="vertical">
@@ -466,7 +465,7 @@
               <img src="assets/svg/patch-check.svg" alt="">
               Courses Completed
             </div>
-            <div class="card-body color1" style="overflow: auto;height: 504px;">
+            <div class="card-body overflow-auto color1" style="height: 504px;">
               <div class="list-group">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Complete Cyber Security Course</h5>
@@ -511,7 +510,7 @@
         </div>
       </div>
       <br>
-      <footer class="text-center rounded color1" style="margin: 0px;padding: 0px;">
+      <footer class="text-center rounded m-0 p-0 color1">
         <div id="contact" class="row">
           <div class="col-12">
             <div class="card-transparent color2">
@@ -536,15 +535,14 @@
                         <div class="col-md-6 col-xs-12">
                           <span></span><br>
                           <div>
-                            <a class="btn btn-link form-control border border-primary text-center"
-                              href="assets/IMPORTANT_DOCUMENTS/Resume_Shounak.pdf" style="overflow-y: hidden;">
+                            <a class="btn btn-link form-control border border-primary text-center overflow-hidden" href="assets/IMPORTANT_DOCUMENTS/Resume_Shounak.pdf">
                               Download my CV
                             </a>
                           </div>
                         </div>
                       </div>
                       <hr>
-                      <blockquote cite="The Lord Of The Rings" style="margin: 0px;">
+                      <blockquote cite="The Lord Of The Rings" class="m-0">
                         <i>"One Ring to rule them all, One Ring to find them, One Ring to bring them all, and in the
                           darkness bind
                           them"</i><br>
