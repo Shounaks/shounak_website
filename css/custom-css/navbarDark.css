@@ -1,50 +1,18 @@
-/* .websiteName{
-  clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
-} 
-*/
 #customNavbar {
-    /* position: sticky; */
-    top: 0;
-    font-weight: bold;
-    transition: 0.4s;
-    background-color: #0d7377;
-    /* clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%); */
-  }
-
-  #customNavbar:hover {
-      color: black;
-      opacity: 0.9; 
-  }
-  #customNavbar a:hover {
-    background-color: #17b794;
-    color: black;
-  }
-
-  #customNavbar a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  #icon:hover{
-    background-color: #c8e4f0;
-    color: black;
-    opacity: 0.9;
-  }
-  .sticky {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  .sticky + .content {
-    padding-top: 60px;
-  }
-  @media screen  and (max-width: 767px){
-    #customNavbar{
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-    }
-    .websiteName{
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-      margin-bottom: 5px;
-    }
-  }
+  top: 0;
+  font-weight: bold;
+  transition: 0.4s;
+  background-color: #0d7377;
+}
+#customNavbar:hover {
+  color: whitesmoke;
+  opacity: 0.9; 
+}
+#customNavbar a:hover {
+  background-color: #17b794;
+  color: black;
+}
+#customNavbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}

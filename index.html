@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <!-- META TAGS -->
   <title>Shounak</title>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="author" content="Shounak Bhalerao"/>
-  <meta name="keywords" content="Shounak,Bhalerao"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Shounak Bhalerao's Personal Website"/>
-  <link rel="shortcut icon" href="assets/photos/favicon.png" type="image/png"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Shounak Bhalerao" />
+  <meta name="keywords" content="Shounak,Bhalerao" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shounak Bhalerao's Personal Website" />
+  <link rel="shortcut icon" href="assets/photos/favicon.png" type="image/png" />
   <!-- BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/custom-css/timeline.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <!-- FONT AWESOME LINK -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- OTHER HEADER STUFF -->
@@ -23,89 +26,116 @@
   <!-- LIGHT/DARK THEME : deliberately left blank-->
   <link rel="stylesheet" href="" id="theme-link-navbar">
   <link rel="stylesheet" href="" id="theme-link">
-
+  <link rel="stylesheet" href="css/custom-css/navbar.css">
   <!-- Font Style -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
-  <!-- Navbar Shrink -->
+  <!-- Theme Toggle -->
   <script src="js/themeToggle.js"></script>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/queen.js"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <style>
-    *{
+    * {
       font-family: Ubuntu;
       font-style: normal;
       font-variant: normal;
     }
-    #queen{
+
+    #queen {
       position: absolute;
       display: none;
       top: 400px;
       left: -360px;
       max-width: 200px;
-      
+
     }
   </style>
 </head>
 
 <!-- =========================================================================================================================================== -->
+
 <body class="color2" style="overflow-x: hidden;" onload="setThemeOnLoad()">
-<!-- todo list STARTS: remove after completion-->
-<!-- <div id="draggable" class="bg-warning card" style="position: absolute;left: 500px;top: 150px;z-index: 999;">
-  <div class="card-header">To Do List</div>
-  <div class="card-body">
-  <input type="checkbox" name="" id="" value="">Create A Loading Animation <br>
-  <input type="checkbox" name="" id="" value="">Change Color Scheme <br>
-  <input type="checkbox" name="" id="" value="">Ayush Timeline Image bug<br>
-  <input type="checkbox" name="" id="" value="">RWD course<br>
-  <input type="checkbox" name="" id="" value="">Content Coreography<br>
-  <input type="checkbox" name="" id="" value="">Trishank's Theme Toggler buttons<br>
-</div>
-</div>
-<script>
-  $( function() {
-    $( "#draggable" ).draggable();
-  } );
-  </script> -->
-<!-- todo list ENDS -->
-
-  <div class="websiteName">
-    <div id="icon" class="display-1">Shounak Bhalerao</div>
+  <!-- todo list STARTS: remove after completion-->
+  <!-- <div id="draggable" class="bg-warning card" style="position: absolute;left: 500px;top: 150px;z-index: 999;">
+    <div class="card-header">To Do List</div>
+    <div class="card-body">
+      <input type="checkbox" name="" id="" value="">Create A Loading Animation <br>
+      <input type="checkbox" name="" id="" value="">Change Color Scheme <br>
+      <input type="checkbox" name="" id="" value="">Ayush Timeline Image bug<br>
+      <input type="checkbox" name="" id="" value="">RWD course<br>
+      <input type="checkbox" name="" id="" value="">Content Coreography<br>
+      <input type="checkbox" name="" id="" value="">Navbar Center<br>
+      <input type="checkbox" name="" id="" value="">Trishank's Theme Toggler buttons<br>
+    </div>
   </div>
-
-  <div class="sticky">
+  <script>
+    $(function () {
+      $("#draggable").draggable();
+    });
+  </script> -->
+  <!-- todo list ENDS -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <!-- <div class="h-100 rounded timeline-date" style="padding: 50px;">
+          <div class="rounded h-100 p-4" style="border: 2px solid black;">
+            <div class="text-center">Free</div>
+            <hr>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-8">
+        <div class="websiteName">
+          <div id="icon">Shounak Bhalerao</div>
+          <!-- <h2 class="text-center">Illustrated One-Time Website</h2> -->
+        </div>
+      </div>
+      <div class="col-2">
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="sticky container-fluid">
     <nav id="customNavbar" class="navbar navbar-expand-md navbar-light sticky">
-      <div>&nbsp; Its nice to meet you too... &nbsp;</div>
+      <!-- <div>&nbsp; Its nice to meet you too... &nbsp;</div> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link rounded" href="#home">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="position: absolute;left: 50%;transform: translatex(-50%);">
+          <li class="nav-item"><a class=" rounded " href="#home"
+              style="display: block;padding: 0.5rem 1rem;text-decoration: none;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;">
               <img src="assets/svg/question-diamond.svg"> About & Awards</a>
           </li>&nbsp;
-          <li class="nav-item"><a class="nav-link rounded" href="#exp">
+          <li class="nav-item"><a class="rounded " href="#exp"
+              style="display: block;padding: 0.5rem 1rem;text-decoration: none;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;">
               <img src="assets/svg/building.svg"> Experience</a>
           </li>&nbsp;
-          <li class="nav-item"><a class="nav-link rounded" href="#official">
+          <li class="nav-item"><a class="rounded " href="#official"
+              style="display: block;padding: 0.5rem 1rem;text-decoration: none;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;">
               <img src="assets/svg/hdd-network.svg"> Projects and Skills</a>
           </li>&nbsp;
-          <li class="nav-item"><a class="nav-link rounded" href="#contact">
+          <li class="nav-item"><a class="rounded " href="#contact"
+              style="display: block;padding: 0.5rem 1rem;text-decoration: none;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;">
               <img src="assets/svg/phone.svg">Contacts</a>
           </li>&nbsp;
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item color1 rounded">            
-            <button class="btn btn-toggle" onclick="toggleTheme()"><img src="assets/svg/lightbulb.svg"/></button>
+          <li class="nav-item color1 rounded">
+            <button class="btn btn-toggle" onclick="toggleTheme()"><img src="assets/svg/lightbulb.svg" /></button>
           </li>&nbsp;
         </ul>
       </div>
     </nav>
   </div>
+  <hr>
   <div class="container-fluid">
     <!-- <div class="">
       <div class="row p-3">
@@ -123,54 +153,69 @@
       <div class="row g-5">
         <div class="col-lg-8 col-sm-12">
           <div class="card-transparent border border-primary rounded color0">
-            <div id="home" class="card-header color2">
+            <div id="home" class="card-header color0">
               <img src="assets/svg/question-diamond.svg" alt="">
               About Me: Who Am I?
             </div>
             <div class="card-body color1 text-justify">
               <span style="position: relative">
-                <img class="mypic img-fluid float-left w-100" src="assets/photos/medidate.jpeg" style="max-width: 400px;max-height: 600px;padding: 0px 15px 15px; border-radius: 50px;" onmouseover="showQueen()" onmouseout="hideQueen()">
+                <img class="mypic img-fluid float-left w-100" src="assets/photos/medidate.jpeg"
+                  style="max-width: 400px;max-height: 600px;padding: 0px 15px 15px; border-radius: 50px;"
+                  onmouseover="showQueen()" onmouseout="hideQueen()">
                 <img id="queen" src="assets/photos/killer_queen.png">
               </span>
               <blockquote cite="JOJO's Bizzare Adventure">
-              My name is Shounak Bhalerao. <br>
-              I'm 23 years old. <br>
-              My house is in the southern section of Aurangabad, where all the apartments are, and I am not married. <br>
-              I work as an System Engineer for the Infosys Ltd, and I get home every day by 6 PM at the latest. <br>
-              I don't smoke, but I occasionally drink milk. <br>
-              I'm in bed by 11:30 PM, and make sure I get six hours of sleep, no matter what. <br>
-              After having 6 glass of warm tea and doing about twenty minutes of coding before going to bed, I usually have very much problems sleeping until morning. <br>
-              Just like a baby, I wake up without any fatigue or stress in the morning. <br>
-              <b>
-                I'm trying to explain that I'm a person who wishes to live a very quiet life.
-              </b><br>
-              I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. <br>
-              That is how I deal with humans, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone. <br>
+                My name is Shounak Bhalerao. <br>
+                I'm 23 years old. <br>
+                My house is in the southern section of Aurangabad, where all the apartments are, and I am not married.
+                <br>
+                I work as an System Engineer for the Infosys Ltd, and I get home every day by 6 PM at the latest. <br>
+                I don't smoke, but I occasionally drink milk. <br>
+                I'm in bed by 11:30 PM, and make sure I get six hours of sleep, no matter what. <br>
+                After having 6 glass of warm tea and doing about twenty minutes of coding before going to bed, I usually
+                have very much problems sleeping until morning. <br>
+                Just like a baby, I wake up without any fatigue or stress in the morning. <br>
+                <b>
+                  I'm trying to explain that I'm a person who wishes to live a very quiet life.
+                </b><br>
+                I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose
+                sleep at night. <br>
+                That is how I deal with humans, and I know that is what brings me happiness. Although, if I were to
+                fight I wouldn't lose to anyone. <br>
               </blockquote>
               -Shounak Bhalerao introducing himself to [The one reading this]
               <br>
               <br>
-              
-              All the JoJo References aside, I am Shounak Bhalerao, another Hooman from Aurangabad city of Maharashtra. <br>
-              After Completing my schooling from <a href="https://www.tch.org.in/" target="_blank">Tender Care Home</a>. I did my Junior College from <a href="https://www.naikcollege.org/" target="_blank">Vasantrao Naik College</a> and completed my graduation from <a href="https://www.dietms.org/" target="_blank">DIEMS,Aurangabad</a>. <br>
-              I love meeting new people and debating about things that I dont know. Reading Books, Exploring different fields and obtaining yet unknown knoweledge, and trying to learn new stuff is AWESOME!!
+
+              All the JoJo References aside, I am Shounak Bhalerao, another Hooman from Aurangabad city of Maharashtra.
+              <br>
+              After Completing my schooling from <a href="https://www.tch.org.in/" target="_blank">Tender Care Home</a>.
+              I did my Junior College from <a href="https://www.naikcollege.org/" target="_blank">Vasantrao Naik
+                College</a> and completed my graduation from <a href="https://www.dietms.org/"
+                target="_blank">DIEMS,Aurangabad</a>. <br>
+              I love meeting new people and debating about things that I dont know. Reading Books, Exploring different
+              fields and obtaining yet unknown knoweledge, and trying to learn new stuff is AWESOME!!
               <hr>
               <!-- 👇justify-content: space-evenly; is not supported by bootstrap due to compatiblity issues with IE10 -->
-              <div class="w-100 h-100 d-flex rounded color0" style="justify-content: space-evenly;"> 
-                <a href="mailto:shounakbhalerao777@gmail.com" target="_blank"><img src="assets/svg/envelope-open.svg" title="Email" alt="">&nbsp; Email Me</a>
+              <div class="w-100 h-100 d-flex rounded color0" style="justify-content: space-evenly;">
+                <a href="mailto:shounakbhalerao777@gmail.com" target="_blank"><img src="assets/svg/envelope-open.svg"
+                    title="Email" alt="">&nbsp; Email Me</a>
                 |
-                <a href="https://www.linkedin.com/in/shounak-bhalerao-275310201/" target="_blank"><img src="assets/svg/linkedin.svg" title="LinkedIn Link" alt="">&nbsp; LinkedIn</a>
+                <a href="https://www.linkedin.com/in/shounak-bhalerao-275310201/" target="_blank"><img
+                    src="assets/svg/linkedin.svg" title="LinkedIn Link" alt="">&nbsp; LinkedIn</a>
                 |
-                <a href="https://github.com/Shounaks" target="_blank"><img src="assets/svg/github.svg" title="Github Link" alt="">&nbsp; Github</a>
+                <a href="https://github.com/Shounaks" target="_blank"><img src="assets/svg/github.svg"
+                    title="Github Link" alt="">&nbsp; Github</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-12">
           <div class="card-transparent border border-primary rounded h-100 color0">
-            <div id="achievements" class="card-header color2">
+            <div id="achievements" class="card-header color0">
               <img src="assets/svg/star.svg" alt="">
-              Achievements</div>
+              Achievements
+            </div>
             <div class="card-body color1">
               <div class="row">
                 <div class="card-transparent ">
@@ -197,7 +242,8 @@
                       <div class="card-body">
                         <h5 class="card-title"><b>Linux(🐧) is Love(💙💚💛💜🧡🖤)</b></h5>
                         <div class="card-subtitle m-2 p-2">
-                          <h6 class="card-subtitle mb-2"> <b>-</b> Worked on almost over 2 dozens of Linux-based O.S.</h6>
+                          <h6 class="card-subtitle mb-2"> <b>-</b> Worked on almost over 2 dozens of Linux-based O.S.
+                          </h6>
                         </div>
                         <p class="card-text">
                           Have managed multiple FTP servers, workstations, and Desktops. Tried to Create a proxy server
@@ -217,7 +263,7 @@
       <div class="row g-5">
         <div class="col">
           <div class="card-transparent border border-primary rounded color0">
-            <div id="exp" class="card-header color2">
+            <div id="exp" class="card-header color0">
               <img src="assets/svg/building.svg" alt="">
               Experience:
             </div>
@@ -231,7 +277,7 @@
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
                       <h3 class=" text-success color2">Working on a project by [CONFEDENTIAL] with Infosys</h3>
                       <p class=" text-justify">
-                        Currently Doing a project for [xyz] company 
+                        Currently Doing a project for [xyz] company
                         <span class="timeline-date2 text-danger">(2021-04-24)</span><br>
                       </p>
                     </div>
@@ -250,7 +296,7 @@
                       <p class=" text-justify">
                         Completed Generic & Stream Training in JAVA-ANGULAR and Implemented features to a Capstone
                         E-Commers Website. (psst.. got 92/100 in every tests individually!!) </p>
-                        <span class="timeline-date2 text-danger">(2020-02-23)</span><br>
+                      <span class="timeline-date2 text-danger">(2020-02-23)</span><br>
                     </div>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                       <img class="float-right" height="50px" width="100%" src="assets/timeline/java.png">
@@ -302,15 +348,37 @@
       <div class="row g-5 h-100">
         <div class="col-md-6 col-sm-12">
           <div class="card-transparent border border-primary rounded h-100 color0">
-            <div id="official" class="card-header color2">
+            <div id="official" class="card-header color0">
               <img src="assets/svg/box-seam.svg" alt="" />
               Projects
             </div>
-            <div class="card-body color1">
-              <div class="row">
-                <div class="col text-justify h-100">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nulla repellat eum beatae quod
-                  alias iste eaque doloremque officia dignissimos, dicta necessitatibus consequatur?
+            <div class="card-body overflow-auto color1">
+              <div class="list-group">
+                <div class="w-100 justify-content-between">
+                  <h5 class="mb-1">Complete Cyber Security Course</h5>
+                  <small class="">Learnt the basics of Cyber Security and Using Tails OS.</small>
+                </div>
+                <hr>
+                <div class="w-100 justify-content-between">
+                  <h5 class="mb-1">Workshop on Git & Github</h5>
+                  <small class="">Learnt the basics of Git using Command Line and Atom IDE. Basics of Github</small>
+                </div>
+                <hr>
+                <div class="w-100 justify-content-between">
+                  <h5 class="mb-1">Operations Security Bootcamp</h5>
+                  <small class="">Learnt the basics of Operations Security and Policy Making.</small>
+                </div>
+                <hr>
+                <div class="w-100 justify-content-between">
+                  <h5 class="mb-1">Basics of IOT and AI</h5>
+                  <small class="">Created a mini-project for monitoring plant water level and using AI to automate
+                    irrigation.</small>
+                </div>
+                <hr>
+                <div class="w-100 justify-content-between">
+                  <h5 class="mb-1">Reverse Engineering and Exploit creation</h5>
+                  <small class="">Learning about Buffer Overflows and creating exploits for simple vulnerablities in
+                    software.</small>
                 </div>
               </div>
             </div>
@@ -320,7 +388,7 @@
           <div class="row ">
             <div class="col">
               <div class="card-transparent border border-primary rounded color0">
-                <div class="card-header color2">
+                <div class="card-header color0">
                   <img src="assets/svg/controller.svg" alt="" />
                   Interests
                 </div>
@@ -328,11 +396,10 @@
                   <div class="d-flex align-items-start">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                       aria-orientation="vertical">
-                      <button class="nav-link" id="cyberTab" data-bs-toggle="pill" data-bs-target="#cyberPill"
-                        type="button" role="tab" aria-controls="cyberPill" aria-selected="false">Cyber Security</button>
-                      <button class="nav-link active" id="learningTab" data-bs-toggle="pill"
-                        data-bs-target="#learningPill" type="button" role="tab" aria-controls="learningPill"
-                        aria-selected="true">Auto-Didactic</button>
+                      <button class="nav-link active" id="cyberTab" data-bs-toggle="pill" data-bs-target="#cyberPill"
+                        type="button" role="tab" aria-controls="cyberPill" aria-selected="false">Cybersecurity</button>
+                      <button class="nav-link" id="learningTab" data-bs-toggle="pill" data-bs-target="#learningPill"
+                        type="button" role="tab" aria-controls="learningPill" aria-selected="true">Autodidactic</button>
                       <button class="nav-link" id="socializerTab" data-bs-toggle="pill" data-bs-target="#socializerPill"
                         type="button" role="tab" aria-controls="socializerPill"
                         aria-selected="false">Socializer</button>
@@ -342,10 +409,16 @@
                         role="tab" aria-controls="aePill" aria-selected="false">Anime-enthuiast</button>
                     </div>
                     <div class="tab-content" id="v-pills-tabContent">
-                      <div class="tab-pane fade show active" id="cyberPill" role="tabpanel" aria-labelledby="cyberTab">
-                        Learning New Stuff</div>
+                      <div class="tab-pane fade show active px-4 text-justify" id="cyberPill" role="tabpanel"
+                        aria-labelledby="cyberTab">
+                        Cybersecurity is the art of protecting networks, devices, and data from unauthorized access or
+                        criminal use and the practice of ensuring confidentiality, integrity, and availability of
+                        information.
+
+                      </div>
                       <div class="tab-pane fade" id="learningPill" role="tabpanel" aria-labelledby="learningTab">
-                        Learning New Stuff</div>
+                        Learning new stuff is Awesome!
+                      </div>
                       <div class="tab-pane fade" id="socializerPill" role="tabpanel" aria-labelledby="socializerTab">
                         Making new Friends</div>
                       <div class="tab-pane fade" id="adPill" role="tabpanel" aria-labelledby="adTab">Love to read books
@@ -362,7 +435,7 @@
           <div class="row">
             <div class="col">
               <div class="card- border border-primary rounded color0">
-                <div class="card-header color2">
+                <div class="card-header color0">
                   <img src="assets/svg/file-earmark-code.svg" alt="" />
                   Skills
                 </div>
@@ -449,7 +522,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 col-sm-12 g-4">
           <div class="card-transparent border border-primary rounded h-100 color0">
-            <div class="card-header color2">
+            <div class="card-header color0">
               <img src="assets/svg/calculator.svg" alt="">
               Education Qualifications
             </div>
@@ -467,7 +540,8 @@
                 <div class="card-body text-center">
                   <h5 class="card-title"><b>Pre-University Education</b></h5>
                   <h6 class="card-subtitle mb-2"> Vasantrao Naik College, Aurangabad</h6>
-                  <h6 class="card-subtitle mb-2">12th (Physics - Chemistry - Maths - Electronics)- batch of 2014-2016</h6>
+                  <h6 class="card-subtitle mb-2">12th (Physics - Chemistry - Maths - Electronics)- batch of 2014-2016
+                  </h6>
                 </div>
               </div>
               <hr>
@@ -483,7 +557,7 @@
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12 g-4">
           <div class="card-transparent border border-primary rounded h-100 color0">
-            <div class="card-header color2">
+            <div class="card-header color0">
               <img src="assets/svg/patch-check.svg" alt="">
               Courses Completed
             </div>
@@ -552,12 +626,14 @@
                           Shounak Ravi Bhalerao <br>
                           Phone No: (+91) 9404546800 <br>
                           Email:
-                          <a class="anchor" href="mailto:shounakbhalerao777@gmail.com" title="shounakbhalerao777@gmail.com">shounakbhalerao777@gmail.com</a>
+                          <a class="anchor" href="mailto:shounakbhalerao777@gmail.com"
+                            title="shounakbhalerao777@gmail.com">shounakbhalerao777@gmail.com</a>
                         </div>
                         <div class="col-md-6 col-xs-12">
                           <span></span><br>
                           <div>
-                            <a class="btn btn-link form-control border border-primary text-center overflow-hidden" href="assets/IMPORTANT_DOCUMENTS/Resume_Shounak.pdf">
+                            <a class="btn btn-link form-control border border-primary text-center overflow-hidden"
+                              href="assets/IMPORTANT_DOCUMENTS/Resume_Shounak.pdf">
                               Download my CV
                             </a>
                           </div>
@@ -583,4 +659,5 @@
     </div>
   </div>
 </body>
+
 </html>
