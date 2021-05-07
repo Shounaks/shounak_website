@@ -3,10 +3,11 @@
   font-weight: bold;
   transition: 0.4s;
   background-color: #0d7377;
+  opacity: 0.7;
 }
 #customNavbar:hover {
   color: whitesmoke;
-  opacity: 0.9; 
+  opacity: 0.9;
 }
 #customNavbar a:hover {
   background-color: #17b794;
