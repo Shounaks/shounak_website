@@ -104,13 +104,13 @@
   <hr>
   <div class="sticky container-fluid">
     <nav id="customNavbar" class="navbar navbar-expand-md navbar-light sticky">
-      <div>&nbsp; Its nice to meet you too... &nbsp;</div>
+      <!-- <div>&nbsp; Its nice to meet you too... &nbsp;</div> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+        <ul class="navbar-nav nav-fill w-100 me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class=" rounded " href="#home"
               style="display: block;padding: 0.5rem 1rem;text-decoration: none;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;">
               <img src="assets/svg/question-diamond.svg" class="">&nbsp; About & Awards</a>
@@ -128,9 +128,9 @@
               <img src="assets/svg/phone.svg">&nbsp;Contacts</a>
           </li>&nbsp;
         </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item color1 rounded">
-            <button class="btn btn-toggle" onclick="toggleTheme()"><img src="assets/svg/lightbulb.svg" /></button>
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item rounded">
+            <a class="btn btn-toggle" onclick="toggleTheme()"><img src="assets/svg/lightbulb.svg" /></a>
           </li>&nbsp;
         </ul>
       </div>
@@ -636,6 +636,7 @@
                         </a>
                       </div>
                   </div>
+                  <br>
                   <div class="col-md-6 col-xs-12 border border-primary">
                     Content coming soon...
                   </div>
