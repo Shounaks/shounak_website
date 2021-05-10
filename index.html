@@ -12,23 +12,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Shounak Bhalerao's Personal Website" />
   <link rel="shortcut icon" href="assets/photos/favicon.png" type="image/png" />
+  
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="css/custom-css/main.css">
   <!-- BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/custom-css/timeline.css">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
   <!-- FONT AWESOME LINK -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
   <!-- OTHER HEADER STUFF -->
   <script src="js/bootstrap.js"></script>
   <link rel="stylesheet" href="css/custom-css/codeWars.css">
   <link rel="stylesheet" href="css/custom-css/meter.css">
+  
   <!-- LIGHT/DARK THEME : deliberately left blank-->
   <link rel="stylesheet" href="" id="theme-link-navbar">
   <link rel="stylesheet" href="" id="theme-link">
   <link rel="stylesheet" href="css/custom-css/navbar.css">
+  
   <!-- Font Style -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  
   <!-- Theme Toggle -->
   <script src="js/themeToggle.js"></script>
 
@@ -39,6 +48,7 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  
   <style>
     * {
       font-family: Ubuntu;
@@ -153,20 +163,46 @@
     <div class="container-fluid">
       <div class="row g-5">
         <div class="col-lg-8 col-sm-12">
-          <div class="card-transparent border border-primary rounded color0">
+          <div class="card-transparent border border-primary rounded color0 h-100">
             <div id="home" class="card-header color0">
               <img src="assets/svg/question-diamond.svg" alt="">
               About Me: Who Am I?
             </div>
             <div class="card-body color1 text-justify">
-              I am Shounak Bhalerao, another Hooman from Aurangabad city of Maharashtra.
-              <br>
-              After Completing my schooling from <a href="https://www.tch.org.in/" target="_blank">Tender Care Home</a>.
-              I did my Junior College from <a href="https://www.naikcollege.org/" target="_blank">Vasantrao Naik
-                College</a> and completed my graduation from <a href="https://www.dietms.org/"
-                target="_blank">DIEMS,Aurangabad</a>. <br>
-              I love meeting new people and debating about things that I dont know. Reading Books, Exploring different
-              fields and obtaining yet unknown knoweledge, and trying to learn new stuff is AWESOME!!
+              <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4  mypicture-container">
+                  <center>
+                    <img src="assets/photos/medidate.jpeg" alt="" class="mypicture" style="border-radius: 20px 20px 0px 0px;" >
+                    <div class="color1 d-flex justify-content-between" style="vertical-align: middle;margin-top: -2rem;">
+                        <a href="https://www.linkedin.com/in/shounak-bhalerao-275310201/" target="_blank"><i class="fab fa-linkedin-in" style="background:transparent" id="smallicon"></i></a>
+                        <a href="https://github.com/Shounaks" target="_blank"><i class="fab fa-github" style="background:transparent" id="smallicon"></i></a>
+                        <a href="#SorryGuysNoPublicInstagram"><i class="fab fa-instagram" style="background:transparent" id="smallicon"></i></a>
+                        <a href="#SorryGuysNoTwitter"><i class="fab fa-twitter" style="background:transparent" id="smallicon"></i></a>
+                        <a href="mailto:shounakbhalerao777@gmail.com"><i class="fab fa fa-envelope" style="background:transparent" id="smallicon"></i></a>
+                    </div>
+                  </center>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                  <blockquote class="mb-0 card-body" style="color:white;padding: 10px 20px;margin: 0 0 20px;font-size: 17.5px;border-left: 5px solid #eee;">
+                   <h2>Henlo,</h2>
+                   <p>   
+                    I am a Computer Science graduate with a passion to learn new technologies and
+                    gaining new Knoweledge in different fields. Outside of work, I attended RSS 
+                    Shakhas regularly and was a member of ABVP in my school and college years. 
+                    Currently I am a Systems Engineer, working with Infosys on a project for Sabre 
+                    Global ltd. Having completed my training in the JAVA-Angular stream. Currently
+                    learning about creation of Microservices using Spring Boot and Virtualization Security(Later)!!
+                   </p>
+                   <p>   
+                    After Completing my schooling from <a href="https://www.tch.org.in/" target="_blank">Tender Care Home</a>.
+                    I did my Junior College from <a href="https://www.naikcollege.org/" target="_blank">Vasantrao Naik College</a> 
+                    and completed my graduation from <a href="https://www.dietms.org/" target="_blank">DIEMS,Aurangabad</a>.
+                    I love meeting new people and debating about things that I dont know. Reading Books, Exploring different
+                    fields and obtaining yet unknown knoweledge, and trying to learn new stuff is AWESOME!!
+                   </p>
+                 </blockquote>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -235,9 +271,9 @@
                   <div
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                      <h3 class=" text-success color2">Working on a project by [CONFEDENTIAL] with Infosys</h3>
+                      <h3 class="color2">Working on a project by [edit-me-later] with Infosys</h3>
                       <p class=" text-justify">
-                        Currently Doing a project for [xyz] company
+                        Currently Doing a project for [edit-me-later] company
                         <span class="timeline-date2 text-danger">(2021-04-24)</span><br>
                       </p>
                     </div>

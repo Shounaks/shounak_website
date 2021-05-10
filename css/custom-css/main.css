@@ -1,0 +1,17 @@
+#smallicon{
+	font-size:15px;
+	margin:0px 0px;
+	margin: 0px 10px;
+    }
+.mypicture-container {
+    position: relative;
+    width: 100%;
+    max-width:410px;
+    height: auto;
+    margin: 20px auto;
+    }
+.mypicture {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
