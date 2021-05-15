@@ -5,20 +5,25 @@
     color3 = text itself{redundant  }
 
 */
-.color0{
-    color: black;
-    background-color: #e3f2fd;
+/* .color0{
+    color: whitesmoke;
+    background-color: #17b794;
 }
 .color1{
-    color: black;
-    background-color: #c8e4f0;
+    color: whitesmoke;
+    background-color: #0d7377;
+    
 }
 .color2{
-    color: black;
-    background-color: #abd4f8;
+    color: whitesmoke;
+    background-color: #161c22;
 }
 body{
-    color: black;
+    color: whitesmoke;
+    background-color: rgb(80, 80, 35);
+}
+a{
+    color: aqua;
 }
 .mario{
     background: url(../../assets/gif/mario-wide.gif);
@@ -26,3 +31,19 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: green;
+}
+
+.accordion-button.collapsed {
+    background: #0d7377;
+} */
+/* 
+    color0 = background
+    color1 = card boxes
+    color2 = heading of card
+    color3 = text itself{redundant  }
+
+*/

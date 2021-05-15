@@ -2,18 +2,17 @@
   top: 0;
   font-weight: bold;
   transition: 0.4s;
-  background-color: #0d7377;
+  background-color: #ed7966;
   opacity: 0.7;
 }
 #customNavbar:hover {
-  color: whitesmoke;
   opacity: 0.9;
 }
 #customNavbar a:hover {
-  background-color: #17b794;
+  background-color: #f5cac2;
   color: black;
 }
-#customNavbar a.active {
+/* #customNavbar a.active {
   background-color: dodgerblue;
   color: white;
-}
+} */

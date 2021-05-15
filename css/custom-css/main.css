@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+/* :root{
+    --demovar :#ffffff;
+} */
 #smallicon{
 	font-size:15px;
 	margin:0px 0px;
@@ -10,8 +15,30 @@
     height: auto;
     margin: 20px auto;
     }
+
 .mypicture {
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 20px 20px 20px 20px;
     }
+.main-font-header{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    border-bottom: 4px solid whitesmoke;
+    margin-bottom: 10px;
+}
+.main-font-header2{
+    font-family: 'Amatic SC', cursive;
+}
+.main-font-subtext{
+    margin-top: -14px;
+    padding-top: 0px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 44px;
+}
+@media screen and (min-width: 576px) {
+    .display-2{
+        size: 44px;
+    }   
+}
