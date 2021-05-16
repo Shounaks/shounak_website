@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-
-/* :root{
-    --demovar :#ffffff;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+body{
+    /* --demovar :#ffffff; */
+    font-family: 'Itim', cursive;
+    font-style: normal;
+    font-variant: normal;
+}
 #smallicon{
 	font-size:15px;
 	margin:0px 0px;
@@ -15,7 +18,6 @@
     height: auto;
     margin: 20px auto;
     }
-
 .mypicture {
       display: block;
       width: 100%;
@@ -37,6 +39,14 @@
     font-family: 'Amatic SC', cursive;
     font-size: 44px;
 }
+
+.mario{
+    background: url(../../assets/gif/mario-wide.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media screen and (min-width: 576px) {
     .display-2{
         size: 44px;

@@ -1,19 +1,20 @@
-.text-color1{color: #f5cac2;}
-.color0{
-    background-color: #ed7966;
+:root{
+    --color0:#ed7966;
+    --color1:#f5cac2;
+    --color2:#000010;
 }
-.color1{
-    background-color: #f5cac2;
-}
-.color2{
-    background-color: #000010;
-}
-body{
-    color: black;
-}
-.mario{
-    background: url(../../assets/gif/mario-wide.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
+.text-color0{color: var(--color0);}
+.text-color1{color: var(--color1);}
+.text-color2{color: var(--color2);}
+
+.color0{background-color: var(--color0);}
+.color1{background-color: var(--color1);}
+.color2{background-color: var(--color2);}
+
+body{color: black;}
+
+.nav .nav-link:focus{background-color: var(--color0);}
+
+.nav .nav-link:active{background-color: var(--color1);}
+.nav .nav-link:visited{background-color: var(--color1);}
