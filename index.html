@@ -17,9 +17,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/custom-css/timeline.css">
   <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <link rel="stylesheet" href="css/bootstrap.min.css.map">
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootstrap.min.js.map"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
   <!-- FONT AWESOME LINK -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,47 +35,16 @@
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/custom-css/main.css">
 
-  <!-- Jquery -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
-  <!-- <script src="js/queen.js"></script> -->
-
-  <!-- OTHER HEADER STUFF -->
-  <script src="js/bootstrap.js"></script>
-  <link rel="stylesheet" href="css/custom-css/codeWars.css">
-  <link rel="stylesheet" href="css/custom-css/meter.css">
-
   <!-- LIGHT/DARK THEME : deliberately left blank-->
-  <link rel="stylesheet" href="" id="theme-link-navbar">
   <link rel="stylesheet" href="" id="theme-link">
-  <link rel="stylesheet" href="css/custom-css/navbar.css">
 
   <!-- Theme Toggle -->
-  <script src="js/themeToggle.js"></script>
-
-  <!-- Background image effect -->
-  <!-- <script src="js/backgroundMove.js"></script> -->
+  <script src="js/main.js"></script>
 </head>
 
 <!-- =========================================================================================================================================== -->
 
 <body class="color2" style="overflow-x: hidden;" onload="setThemeOnLoad()">
-  <!-- todo list STARTS: remove after completion-->
-  <!-- <div id="draggable" class="bg-warning card" style="position: absolute;left: 500px;top: 150px;z-index: 999;">
-    <div class="card-header">To Do List</div>
-    <div class="card-body">
-      <input type="checkbox" name="" id="" value="">Create A Loading Animation <br>
-      <input type="checkbox" name="" id="" value="">Ayush Timeline Image bug<br>
-      <input type="checkbox" name="" id="" value="">RWD course<br>
-      <input type="checkbox" name="" id="" value="">Trishank's Theme Toggler buttons<br>
-    </div>
-  </div>
-  <script>
-    $(function () {
-      $("#draggable").draggable();
-    });
-  </script> -->
-  <!-- todo list ENDS -->
   <div class="container-fluid">
     <div class="row">
       <div class="col-2">
@@ -154,7 +125,6 @@
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <div id="home" class="w-100">
-                    <!-- <img src="assets/svg/question-diamond.svg"> -->
                     <div class="main-font-header display-2" style="border-bottom: 0px;margin-bottom: 40px;">About Me:
                       Who Am I?</div>
                   </div>
@@ -203,10 +173,7 @@
               </div>
               <div class="row">
                 <div class="col-lg-12 col-sm-12">
-                  <!-- <div class="card-transparent border border-primary rounded h-100"> -->
-                  <!-- <div id="achievements" class="card-header"> -->
                   <div id="achievements" class="w-100">
-                    <!-- <img src="assets/svg/question-diamond.svg"> -->
                     <div class="main-font-header2 display-2 mx-4 text-center">
                       <img src="assets/svg/star.svg">
                       What Am I?
@@ -238,12 +205,6 @@
                         <h6> <b>-</b> Solved over 150 problems of Java and Datastructures using Java Collection
                           Framework</h6>
                         </p>
-                        <!-- <a href="https://www.codewars.com/users/Shalnarkus">
-                      <img class="img-fluid codewars" src="https://www.codewars.com/users/Shalnarkus/badges/micro"
-                        onmouseover="this.src='https://www.codewars.com/users/Shalnarkus/badges/large'"
-                        onmouseout="this.src='https://www.codewars.com/users/Shalnarkus/badges/micro'">
-                    </a> -->
-                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                       </div>
                     </div>
                   </div>
@@ -324,91 +285,6 @@
       </div>
     </div>
     <br>
-    <div class="row g-5">
-      <div class="col">
-        <div class="card-transparent border border-primary rounded color0">
-          <div id="exp" class="card-header color0">
-            <img src="assets/svg/building.svg" alt="">
-            Experience:
-          </div>
-          <div class="card-body overflow-auto color1" style="height: 533px;">
-            <!-- TIMELINE STARTS -->
-            <div class="container">
-              <div class="timeline">
-                <!-- #1 -->
-                <div
-                  class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                  <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                    <h3 class="text-light color2">Working on a project by [confidential] with Infosys</h3>
-                    <p class=" text-justify">
-                      Currently Doing a project for [edit-me-later] company
-                      <span class="timeline-date2 text-danger">(2021-04-24)</span><br>
-                    </p>
-                  </div>
-                  <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                    <img class="float-right" height="50px" width="100%" src="assets/timeline/data.png">
-                  </div>
-                  <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                    <time>2021-04-24</time>
-                  </div>
-                </div>
-                <!-- #2 -->
-                <div
-                  class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                  <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                    <h3 class=" text-light color2">Promoted to System Engineer</h3>
-                    <p class=" text-justify">
-                      Completed Generic & Stream Training in JAVA-ANGULAR and Implemented features to a Capstone
-                      E-Commers Website. (psst.. got 92/100 in every tests individually!!) </p>
-                    <span class="timeline-date2 text-danger">(2020-02-23)</span><br>
-                  </div>
-                  <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                    <img class="float-right" height="50px" width="100%" src="assets/timeline/java.png">
-                  </div>
-                  <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                    <time>2020-02-23</time>
-                  </div>
-                </div>
-                <div
-                  class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                  <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                    <h3 class=" text-light color2">Joined Infosys Ltd. as System Engineer Trainee</h3>
-                    <p class=" text-justify">
-                      Joined Infosys Ltd. as System Engineer Trainee
-                      <span class="timeline-date2 text-danger">(2020-11-23)</span><br>
-                    </p>
-                  </div>
-                  <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                    <img class="float-right" height="50px" width="100%" src="assets/timeline/key-person.png">
-                  </div>
-                  <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                    <time>2020-11-23</time>
-                  </div>
-                </div>
-                <div
-                  class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                  <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                    <h3 class="text-light color2">Graduated from DIEMS</h3>
-                    <p class=" text-justify">
-                      Successfully completed my Graduation with ZERO backlogs[except one, but we dont talk about it!]
-                      <span class="timeline-date2 text-danger">(2020-08-17)</span><br>
-                    </p>
-                  </div>
-                  <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                    <img class="float-right" height="50px" width="100%" src="assets/timeline/elearning.png">
-                  </div>
-                  <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                    <time>2020-08-17</time>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- TIMELINE ENDS -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
     <div class="container-fluid">
       <div class="row g-5">
         <div class="col">
@@ -460,6 +336,7 @@
                   <div class="row">
                     <div class="col">
                       <div class="main-font-subtext text-center">
+                        <!-- <div class="col-sm-12"></div> -->
                         <img src="assets/svg/controller.svg" alt="" />
                         Interests
                       </div>
@@ -745,36 +622,46 @@
                   </div>
                   <div class="row" style="margin-bottom: 40px;">
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                      <img src="assets/svg/cyber-security.svg" alt="" style="height: 100px;width: 100px;margin-top: -20px;">
+                      </div>
                       <div>
                         <div>Opensource Intel. Fundamentals</div>
                         <div>Cyberary</div>
                       </div>
                     </div>
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                        <img src="assets/svg/english-language.svg" alt="" style="height: 100px;width: 100px;margin-top: -20px;">
+                      </div>
                       <div>
                         <div>Business English Level 1,2,3,4,5</div>
                         <div>Learnship</div>
                       </div>
                     </div>
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                        <img src="assets/photos/cyber-security.png" alt="" style="height: 100px;width: 100px;margin-top: -20px;">
+                      </div>
                       <div>
                         <div>Intro. to Security Fundamentals</div>
                         <div>Cyberary</div>
                       </div>
                     </div>
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                        <img src="assets/svg/hashtag.svg" alt="" style="height: 90px;width: 90px;margin-top: -10px;">
+                      </div>
                       <div>
                         <div>Introductory C#</div>
                         <div>Udemy</div>
-                        <div>IssueDate : ExpirationDate</div>
+                        <!-- <div>IssueDate : ExpirationDate</div> -->
                       </div>
                     </div>
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                        <img src="assets/svg/smartphone.svg" alt="" style="height: 90px;width: 90px;margin-top: -10px;">
+                      </div>
                       <div>
                         <div>Basics of IOT and AI</div>
                         <div>College Level</div>
@@ -782,15 +669,19 @@
                       </div>
                     </div>
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                        <img src="assets/svg/git.svg" alt="" style="height: 90px;width: 90px;margin-top: -10px;">
+                      </div>
                       <div>
                         <div>Basics of Git and GitHub</div>
                         <div>Indian Open Source Community</div>
-                        <div>IssueDate : ExpirationDate</div>
+                        <!-- <div>IssueDate : ExpirationDate</div> -->
                       </div>
                     </div>
                     <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
-                      <div class="m-2" style="height: 100px;width: 100px;background-color: red;"></div>
+                      <div class="m-2">
+                        <img src="assets/photos/tata.png" alt="" style="height: 90px;width: 90px;margin-top: -10px;">
+                      </div>
                       <div>
                         <div>Career Edge</div>
                         <div>TCS</div>

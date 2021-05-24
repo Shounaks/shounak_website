@@ -13,8 +13,27 @@
 .color2{background-color: var(--color2);}
 
 body{color: black;}
-
+/* .nav-item > a #text{background-color:var(--color1);} */
 .nav .nav-link:focus{background-color: var(--color0);}
-
 .nav .nav-link:active{background-color: var(--color1);}
 .nav .nav-link:visited{background-color: var(--color1);}
+
+#customNavbar {
+    top: 0;
+    font-weight: bold;
+    transition: 0.4s;
+    background-color: var(--color0);
+    /* #ed7966; */
+    opacity: 0.7;
+  }
+  #customNavbar:hover {
+    opacity: 0.9;
+  }
+  #customNavbar a:hover {
+    background-color: #f5cac2;
+    color: black;
+  }
+  /* #customNavbar a.active {
+  background-color: dodgerblue;
+  color: white;
+  } */
