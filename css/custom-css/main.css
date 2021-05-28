@@ -122,6 +122,14 @@ meter::-webkit-meter-even-less-good-value {
   margin-top: -10px;
   transform: translate(-50%, -100%);
 }
+.timelineContainer{
+  border:5px solid black;
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 10px;
+}
+
 /* Navbar.css */
 #icon{
     text-align: center;
@@ -164,6 +172,13 @@ meter::-webkit-meter-even-less-good-value {
 .codewars:hover {
     src: url("https://www.codewars.com/users/Shalnarkus/badges/large");
   }
+/* Course Icons css */
+.course-icon{
+  height: 70px;
+  width: 70px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 /* Mario Block css */
 .mario{
     background: url(../../assets/gif/mario-wide.gif);

@@ -38,3 +38,8 @@ a{color: aqua;}
     background-color: dodgerblue;
     color: white;
   }
+/* VISITED -> FOCUS -> HOVER -> ACTIVE */
+/* .nav-item > a #text{background-color:var(--color1);} */
+/* .nav .nav-link:visited{background-color: var(--color1);}
+.nav .nav-link:focus{background-color: var(--color0);}
+.nav .nav-link:active{background-color: var(--color1);} */

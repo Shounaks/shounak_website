@@ -3,7 +3,9 @@
     --color1:#f5cac2;
     --color2:#000010;
 }
-
+a{
+  color:sienna;
+}
 .text-color0{color: var(--color0);}
 .text-color1{color: var(--color1);}
 .text-color2{color: var(--color2);}
@@ -13,10 +15,13 @@
 .color2{background-color: var(--color2);}
 
 body{color: black;}
+/* VISITED -> FOCUS -> HOVER -> ACTIVE */
 /* .nav-item > a #text{background-color:var(--color1);} */
-.nav .nav-link:focus{background-color: var(--color0);}
-.nav .nav-link:active{background-color: var(--color1);}
-.nav .nav-link:visited{background-color: var(--color1);}
+
+/* 👇holy shit I am a geneus 👇 */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{background-color: var(--color0);}
+/* 👆See this Jugaad 👆 */
+
 
 #customNavbar {
     top: 0;
@@ -26,14 +31,34 @@ body{color: black;}
     /* #ed7966; */
     opacity: 0.7;
   }
-  #customNavbar:hover {
+#customNavbar:hover {
     opacity: 0.9;
   }
-  #customNavbar a:hover {
+#customNavbar a:hover {
     background-color: #f5cac2;
     color: black;
   }
-  /* #customNavbar a.active {
+.timelineContainer:hover{
+    background-color: var(--color0);
+    animation: fadetimelinecontainer 2s infinite;
+  }
+  @keyframes fadetimelinecontainer {
+    from {background-color: var(--color1);}
+    to {background-color: var(--color0);}
+  }
+/* #customNavbar a.active {
   background-color: dodgerblue;
   color: white;
   } */
+
+  /*Contacts section stuff*/
+.cv-button{
+  background-color: var(--color1);
+}
+.cv-button:hover{
+  background-color: var(--color0);
+}
+.cv-button:focus{
+  background-color: var(--color0);
+  opacity: 0.9;
+}
