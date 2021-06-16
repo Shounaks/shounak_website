@@ -6,16 +6,7 @@
  const btn = document.querySelector(".btn-toggle");
  const theme = document.querySelector("#theme-link");
  const themeNavbar = document.querySelector("#theme-link-navbar");
- // const toggleTheme = () => {
- //   if (theme.getAttribute("href") == "./css/custom-css/lightTheme.css") {
- //     theme.href = "./css/custom-css/darkTheme.css";
- //     themeNavbar.href = "./css/custom-css/navbarDark.css";
- //   } else {
- //     theme.href = "./css/custom-css/lightTheme.css";
- //     themeNavbar.href = "./css/custom-css/navbarLight.css";
- //   }
- // };
- 
+
  const toggleTheme = () => {
    if (typeof (Storage) !== "undefined") {
      if (localStorage.getItem("theme") !== null) {
@@ -68,10 +59,3 @@
 //               $('.mypicture').css("object-position", newvalueX+"px     "+newvalueY+"px");
 //     });
 //     });
-
-/**
- * @description killer queen show animation
- * DO NOT USE ON PROFESSIONAL WEBSITE
- */
-const showQueen = () => { var queen = document.getElementById("queen");queen.style.display = "block";}
-const hideQueen = () => { var queen = document.getElementById("queen");queen.style.display = "none";}
