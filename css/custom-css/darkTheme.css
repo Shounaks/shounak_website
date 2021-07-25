@@ -1,7 +1,7 @@
 :root{
     --color0:#ed7966;
     --color1:#f5cac2;
-    --color2:#000010;
+    --bgcolor:url("../../assets/photos/wood.jpg");
 }
 a{
   color:sienna;
@@ -10,9 +10,12 @@ a{
 .text-color1{color: var(--color1);}
 .text-color2{color: var(--color2);}
 
-.color0{background-color: var(--color0);}
-.color1{background-color: var(--color1);}
-.color2{background-color: var(--color2);}
+.color0{background: var(--color0);}
+.color1{background: var(--color1);}
+.bgcolor{
+  background: var(--bgcolor) repeat fixed 100%;
+  
+}
 
 body{color: black;}
 /* VISITED -> FOCUS -> HOVER -> ACTIVE */
@@ -35,7 +38,7 @@ body{color: black;}
     opacity: 0.9;
   }
 #customNavbar a:hover {
-    background-color: #f5cac2;
+    background-color: var(--color1);
     color: black;
   }
 .timelineContainer:hover{

@@ -12,12 +12,20 @@
      if (localStorage.getItem("theme") !== null) {
        if (localStorage.getItem("theme") == "light") {
          //if light theme is loaded. SET DARK
-         localStorage.setItem("theme", "dark");
-         theme.href = "./css/custom-css/darkTheme.css";
+         fadeOutWebPage();
+         setTimeout(function(){
+          localStorage.setItem("theme", "dark");
+          theme.href = "./css/custom-css/darkTheme.css";
+         },500);
+         fadeInWebPage();
        } else {
          //if dark theme is loaded. SET LIGHT
-         localStorage.setItem("theme", "light");
-         theme.href = "./css/custom-css/lightTheme.css";
+         fadeOutWebPage();
+         setTimeout(function(){
+          localStorage.setItem("theme", "light");
+          theme.href = "./css/custom-css/lightTheme.css";
+         },500)
+         fadeInWebPage();
        }
      } else {
        // If no theme is loaded for some EXTREMELY STRANGE reasons, set light
@@ -27,6 +35,15 @@
      alert("Sorry, your browser does not support Web Storage...");
    }
  };
+//<!-- =========================================================================================================================================== -->
+const fadeInWebPage = () => {
+  $(".webpage-body").fadeIn();
+}
+const fadeOutWebPage = () => {
+  $(".webpage-body").fadeOut();
+}
+
+//<!-- =========================================================================================================================================== -->
  const setThemeOnLoad = () => {
    if (typeof (Storage) !== "undefined") {
      if (localStorage.getItem("theme") !== null) {
@@ -43,7 +60,7 @@
      alert("Sorry, your browser does not support Web Storage...");
    }
  }
-
+//<!-- =========================================================================================================================================== -->
 /**
  * @description Background Move Animation
  */
@@ -54,8 +71,8 @@
 //     $("body").mousemove(function(e){
 //               var pageX = e.pageX - ($(window).width() / 2);
 //               var pageY = e.pageY - ($(window).height() / 2);
-//               var newvalueX = width * pageX * -1 - 25;
-//               var newvalueY = height * pageY * -1 - 50;
+//               var newvalueX = width * pageX * (-1);
+//               var newvalueY = height * pageY * (-1);
 //               $('.mypicture').css("object-position", newvalueX+"px     "+newvalueY+"px");
 //     });
 //     });
