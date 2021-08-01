@@ -15,7 +15,7 @@
 
   <!-- BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/custom-css/timeline.css">
+  <!-- <link rel="stylesheet" href="css/custom-css/timeline.css"> -->
   <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -32,13 +32,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
+  
+  <!-- Typewriter.js -->
+  <script src="js/typewriter.js"></script>
+  
   <!--Animate On Scroll (AOS.js)-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
   
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/custom-css/main.css">
@@ -67,7 +67,7 @@
       <div class="col-8">
         <div class="websiteName">
           <div id="icon" class="text-color1 text-center">Shounak Bhalerao</div>
-          <!-- <h2 class="text-center">Illustrated One-Time Website</h2> -->
+          <h2 class="text-color1 text-center">I am a <span id="typewriter"></span></h2>
         </div>
       </div>
       <div class="col-2">
@@ -640,7 +640,7 @@
                     Courses
                   </div>
                   <div class="row">
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/cyber-security.svg" class="course-icon">
                       </div>
@@ -649,7 +649,7 @@
                         <div>Cyberary</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/english-language.svg" class="course-icon">
                       </div>
@@ -658,7 +658,7 @@
                         <div>Learnship</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/photos/cyber-security.png" class="course-icon">
                       </div>
@@ -667,7 +667,7 @@
                         <div>Cyberary</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/hashtag.svg" class="course-icon">
                       </div>
@@ -677,7 +677,7 @@
                         <!-- <div>IssueDate : ExpirationDate</div> -->
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/smartphone.svg" class="course-icon">
                       </div>
@@ -687,7 +687,7 @@
                         <div>2018</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/git.svg" class="course-icon">
                       </div>
@@ -697,7 +697,7 @@
                         <!-- <div>IssueDate : ExpirationDate</div> -->
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/photos/tata.png" class="course-icon">
                       </div>
@@ -707,7 +707,7 @@
                         <div>May 2020</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/java-icon.svg" class="course-icon">
                       </div>
@@ -717,7 +717,7 @@
                         <div>April 2021</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/springio-icon.svg" class="course-icon">
                       </div>
@@ -727,7 +727,7 @@
                         <div>May/June 2021</div>
                       </div>
                     </div>
-                    <div class="col-4 d-flex" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
+                    <div class="col-4 d-flex course-item" style="flex-flow: row;flex-wrap: wrap;max-width: 400px;">
                       <div class="m-2">
                         <img src="assets/svg/agile.svg" class="course-icon">
                       </div>
@@ -818,5 +818,31 @@
   </div>
   </div>
 </body>
+<!-- Animation on Scroll Script -->
+<script>
+  AOS.init();
+</script>
+<!-- Typewriter Script -->
+<script>
+  var app = document.getElementById('typewriter');
 
+var typewriter = new Typewriter(app, {loop: true});
+var textArray = [
+  "Developer","Gamer","Berserker"
+];
+typewriter
+  .typeString(textArray[0])
+  .pauseFor(2500)
+  .deleteChars(textArray[0].length)
+  //
+  .typeString(textArray[1])
+  .pauseFor(2500)
+  .deleteChars(textArray[1].length)
+  //
+  .typeString(textArray[2])
+  .pauseFor(2500)
+  .deleteChars(textArray[2].length)
+  .deleteAll()
+  .start();
+</script>
 </html>
