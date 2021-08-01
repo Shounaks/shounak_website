@@ -47,3 +47,17 @@ a{color: aqua;}
   } */
 /* VISITED -> FOCUS -> HOVER -> ACTIVE */
 
+/* Progress Indicator : Light Theme */
+.header {
+  background-color:whitesmoke;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  background: var(--color1);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  background: var(--color0);
+}

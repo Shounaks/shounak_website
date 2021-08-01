@@ -65,3 +65,17 @@ body{color: black;}
   background-color: var(--color0);
   opacity: 0.9;
 }
+/* Progress Indicator : Light Theme */
+.header {
+  background-color:whitesmoke;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  background: var(--color1);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  background: var(--color0);
+}
