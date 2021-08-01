@@ -1,14 +1,18 @@
 :root{
-    --color0:#ed7966;
-    --color1:#f5cac2;
-    --bgcolor:url("../../assets/photos/wood.jpg");
+    --color0:#274001;
+    --color1:#718C37;
+    --bgcolor:url("../../assets/photos/forest2.jpg");
+    --anchorcolor:#FFFF00;
 }
 a{
-  color:sienna;
+  color:var(--anchorcolor);
 }
 .text-color0{color: var(--color0);}
 .text-color1{color: var(--color1);}
 .text-color2{color: var(--color2);}
+.text-color-main{
+  color: var(--anchorcolor);
+}
 
 .color0{background: var(--color0);}
 .color1{background: var(--color1);}

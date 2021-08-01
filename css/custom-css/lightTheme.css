@@ -2,10 +2,22 @@
     --color0:#17b794;
     --color1:#0d7377;
     --bgcolor:url("../../assets/photos/pattern.jpg");
+    --anchorcolor:#7EC8D9;
+
+}
+a{
+  color: var(--anchorcolor);
 }
 .bgcolor{
   background: var(--bgcolor) repeat fixed 100%;
   
+}
+.text-color0{color: var(--color0);}
+.text-color1{color: var(--color1);}
+.text-color2{color: var(--color2);}
+.text-color-main{
+  color: var(--anchorcolor);
+
 }
 .color0{color: whitesmoke;background-color: var(--color0);}
 .color1{color: whitesmoke;background-color: var(--color1);}
@@ -13,7 +25,6 @@
 
 body{color: whitesmoke;background-color: rgb(80, 80, 35);}
 
-a{color: aqua;}
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text 
