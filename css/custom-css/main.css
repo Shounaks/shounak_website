@@ -137,7 +137,8 @@ meter::-webkit-meter-even-less-good-value {
 /* Navbar.css */
 #icon{
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
   }
   .sticky {
     position: sticky;

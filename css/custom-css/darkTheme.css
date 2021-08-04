@@ -1,43 +1,39 @@
 :root{
     --color0:#274001;
     --color1:#718C37;
-    --bgcolor:url("../../assets/photos/forest2.jpg");
     --anchorcolor:#FFFF00;
+    --bgcolor:url("../../assets/photos/forest2.jpg");
 }
+
 a{
   color:var(--anchorcolor);
 }
+
 .text-color0{color: var(--color0);}
 .text-color1{color: var(--color1);}
 .text-color2{color: var(--color2);}
-.text-color-main{
-  color: var(--anchorcolor);
-}
+.text-color-main{color: var(--anchorcolor);}
 
 .color0{background: var(--color0);}
 .color1{background: var(--color1);}
-.bgcolor{
-  background: var(--bgcolor) repeat fixed 100%;
-  
-}
+.color2{background: var(--color2);}
+
+.bgcolor{background: var(--bgcolor) repeat fixed 100%;}
 
 body{color: black;}
-/* VISITED -> FOCUS -> HOVER -> ACTIVE */
-/* .nav-item > a #text{background-color:var(--color1);} */
 
 /* 👇holy shit I am a geneus 👇 */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{background-color: var(--color0);}
 /* 👆See this Jugaad 👆 */
-
 
 #customNavbar {
     top: 0;
     font-weight: bold;
     transition: 0.4s;
     background-color: var(--color0);
-    /* #ed7966; */
     opacity: 0.7;
   }
+
 #customNavbar:hover {
     opacity: 0.9;
   }
@@ -47,16 +43,19 @@ body{color: black;}
   }
 .timelineContainer:hover{
     background-color: var(--color0);
-    animation: fadetimelinecontainer 2s infinite;
+    animation: fadetimelinecontainer 2s forwards;
   }
+.timelineContainer{
+  animation: fadeOuttimelinecontainer 2s forwards;
+}
   @keyframes fadetimelinecontainer {
     from {background-color: var(--color1);}
     to {background-color: var(--color0);}
   }
-/* #customNavbar a.active {
-  background-color: dodgerblue;
-  color: white;
-  } */
+  @keyframes fadeOuttimelinecontainer {
+    from {background-color: var(--color0);}
+    to {background-color: var(--color1);}
+  }
 
   /*Contacts section stuff*/
 .cv-button{

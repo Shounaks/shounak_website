@@ -15,6 +15,7 @@
 
   <!-- BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="css/bootstrap.css">
+
   <!-- <link rel="stylesheet" href="css/custom-css/timeline.css"> -->
   <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="js/bootstrap.min.js"></script>
@@ -31,7 +32,6 @@
   <!-- Font Style -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   
   <!-- Typewriter.js -->
   <!-- Reference: https://safi.me.uk/typewriterjs/ -->
@@ -48,6 +48,8 @@
   <!-- LIGHT/DARK THEME : deliberately left blank-->
   <link rel="stylesheet" href="" id="theme-link">
 
+  <!-- Quote Generator -->
+  <script src="js/QuoteGenerator.js"></script>
   <!-- Theme Toggle -->
   <script src="js/main.js"></script>
 </head>
@@ -777,23 +779,15 @@
                         </div>
                       </div>
                       <br>
-                      <div class="text-center col">
-                        <blockquote cite="The Lord Of The Rings" class="m-0">
-                          <i>
-                            "One Ring to rule them all,
-                            One Ring to find them,
-                            One Ring to bring them all,
-                            and in the darkness bind them"
-                          </i>
-                          <br>
-                          This website uses <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL 3.0</a>. So you
-                          are
-                          FREE to
-                          use it as per the T&C.
+                      <div class="text-center col w-100">
+                        <blockquote class="m-0" cite="Alexandre Dumas">
+                          Random Quotes from "The Count of Monte Cristo": <br>
+                            <h5 id="quotes" onclick="getNewQuote()" style="cursor: pointer;text-decoration: wavy;"></h5>
                         </blockquote>
                       </div>
                     </div>
                     <hr>
+                    <div class="text-center">This website uses <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL 3.0</a>. So you are FREE to use it as per the T&C.</div>
                   </div>
                   <div class="card-footer">
                     <!-- 👇justify-content: space-evenly; is not supported by bootstrap due to compatiblity issues with IE10 -->
@@ -820,6 +814,10 @@
   </div>
   </div>
 </body>
+<!-- Get New Quote After the page loads -->
+<script>
+  getNewQuote();
+</script>
 <!-- Animation on Scroll Script -->
 <script>
   AOS.init();
