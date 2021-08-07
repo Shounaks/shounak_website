@@ -15,7 +15,7 @@
 
   <!-- BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="css/bootstrap.css">
-
+  
   <!-- <link rel="stylesheet" href="css/custom-css/timeline.css"> -->
   <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="js/bootstrap.min.js"></script>
@@ -42,6 +42,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
+  <!-- LinkedIn API Call -->
+  <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
+
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/custom-css/main.css">
 
@@ -297,7 +300,7 @@
               <div class="row">
                 <div class="col">
                   <div id="official" class="w-100">
-                    <div class="main-font-header display-2">Skill Sheet:</div>
+                    <div class="main-font-header display-2" style="border-bottom: 10px solid;">Skill Sheet:</div>
                   </div>
                 </div>
               </div>
@@ -310,26 +313,48 @@
                     <div class="w-100 justify-content-between">
                       <h4 class="mb-1">Arcania - 2D DungeonCrawler</h4>
                       Arcania is a video game which is scripted in C# and has elements of Role Playing Game and an Action Game created using Unity3D.
+                      <br>
+                      <b>Team Members: </b>
+                      <div class="team-members px-2">
+                        <!-- Akash Pawar -->
+                        <a target="_blank" href="https://www.linkedin.com/in/akashpawar/"><img src="assets/photos/Co-Authors/akash.jpg" alt="Akash Pawar" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ratnesh-kumar-1nine9six/"><img src="assets/photos/Co-Authors/ratnesh.jpg" alt="Ratnesh Shah" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ratnesh-kumar-1nine9six/"><img src="assets/photos/Co-Authors/sachin.jpg" alt="Sachin Kapate" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                      </div>
                     </div>
                     <hr>
                     <div class="w-100 justify-content-between">
                       <h4 class="mb-1">Suvidha-Blood Bank Management System</h4>
-                      Suvidha is a basic ERM program written in C# using .NET framework and MS-SQL with Bootstrap, PopperJS in frontend.
+                      Suvidha is a basic ERM program written in C# using .NET framework and MS-SQL with Bootstrap, PopperJS and many other AWESOME liabraries in frontend.
+                      <br>
+                      <b>Team Members: </b>
+                      <div class="team-members px-2">
+                        <!-- Akash Pawar -->
+                        <a target="_blank" href="https://www.linkedin.com/in/tejal-bhoge-9729081b7/"><img src="assets/photos/Co-Authors/tejal.jpg" alt="Tejal Bhoge" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/akshay-bhaskare-888519186/"><img src="assets/photos/Co-Authors/akshay.jpg" alt="Akshay Bhaskare" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                      </div>
                     </div>
                     <hr>
                     <div class="w-100 justify-content-between">
                       <h4 class="mb-1">Khamang-Android Cookbook and Sharing app</h4>
-                      Khamang is a user application that is used to store and share the Recipes of the Food Dishes online built using Android studioand Firebase
+                      Khamang is a user application that is used to store and share the Recipes of the Food Dishes online built using Android studioand Firebase.
                     </div>
                     <hr>
                     <div class="w-100 justify-content-between">
                       <h4 class="mb-1">PresenT-AttendanceManagement system</h4>
                       Created a mini-project for monitoring plant water level and using AI to automate irrigation.
+                      <br>
+                      <b>Team Members: </b>
+                      <div class="team-members px-2">
+                        <!-- Akash Pawar -->
+                        <a target="_blank" href="https://www.linkedin.com/in/pratik-kurwalkar-91646713a/"><img src="assets/photos/Co-Authors/pratik.jpg" alt="Tejal Bhoge" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shlok-k-442a96126/"><img src="assets/photos/Co-Authors/shlok.jpg" alt="Shlok Kambhale" class="rounded-circle" style="height: 50px;width: 50px;"></a>
+                      </div>
                     </div>
                     <hr>
                     <div class="w-100 justify-content-between">
                       <h4 class="mb-1">Gladiator-Console based Dungeon crawler game</h4>
-                      Gladiatoris an angband clonepurely built using C
+                      Gladiatoris an angband clonepurely built using C.
                     </div>
                   </div>
                 </div>
@@ -763,7 +788,7 @@
               <div class="col-12">
                 <div class="card-transparent">
                   <div class="card-body">
-                    <div class="text-center main-font-header display-2">Contact Details</div>
+                    <div class="text-center main-font-header display-2" >Contact Details</div>
                     <div class="row">
                       <div class="text-center col">
                         Shounak Ravi Bhalerao <br>
@@ -782,7 +807,7 @@
                       <div class="text-center col w-100">
                         <blockquote class="m-0" cite="Alexandre Dumas">
                           Random Quotes from "The Count of Monte Cristo": <br>
-                            <h5 id="quotes" onclick="getNewQuote()" style="cursor: pointer;text-decoration: wavy;"></h5>
+                            <h5 id="quotes" onclick="getNewQuote()" style="cursor: pointer;text-decoration: wavy;user-select: none;"></h5>
                         </blockquote>
                       </div>
                     </div>
@@ -832,15 +857,15 @@ var textArray = [
 ];
 typewriter
   .typeString(textArray[0])
-  .pauseFor(2500)
+  .pauseFor(1500)
   .deleteChars(textArray[0].length)
   //
   .typeString(textArray[1])
-  .pauseFor(2500)
+  .pauseFor(1500)
   .deleteChars(textArray[1].length)
   //
   .typeString(textArray[2])
-  .pauseFor(2500)
+  .pauseFor(1500)
   .deleteChars(textArray[2].length)
   .deleteAll()
   .start();
